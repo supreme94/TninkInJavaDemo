@@ -17,9 +17,16 @@ public class Chip extends Cookie{
 		System.out.println("templete method");
 	}
 	
+	private void bite() {
+		//System.out.println("bite");
+		hook();
+	}
+	
 	public static void main(String[] args) {
 		//PackagedClass p = new PackagedClass();
 		Chip c = new Chip();
-		c.chomp();
+		Cookie ck = c;
+		
+		
 	}
 }

@@ -15,6 +15,10 @@ public class Cookie {
 		System.out.println("static method");
 	}
 	
+	public final void say() {
+		System.out.println("say something");
+	}
+	
 	public static void main(String[] args) {
 		new Cookie(1).bite();
 	}
