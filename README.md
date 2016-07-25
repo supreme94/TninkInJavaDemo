@@ -26,3 +26,6 @@
 4. 普通内部了不能有static字段和static方法
 5. 静态嵌套类 ：OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 6. 内部类： OuterClass.InnerClass innerObject = new OuterObject().new InnerClass();
+
+##第十四章
+1. 使用.class来创建class对象的引用时，不会自动初始化该Class对象。初始化被延迟到了对静态访问（构造器隐式地是静态的）或者非常熟静态域进行首次引用时才执行。

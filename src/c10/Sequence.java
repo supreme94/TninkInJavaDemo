@@ -51,9 +51,33 @@ public class Sequence {
 			System.out.println(selector.current());
 			selector.next();
 		}
+		Selector sc =new Selector() {
+			
+			@Override
+			public void next() {
+				// TODO Auto-generated method stub
+				System.out.println("11111");
+			}
+			
+			@Override
+			public boolean end() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public Object current() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			public void aiya() {
+				System.out.println("1123344");
+			}
+		};
+		
 	}
 }
-
 
 interface Selector {
 	boolean end();

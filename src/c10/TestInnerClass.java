@@ -1,6 +1,6 @@
 package c10;
 
-public class TestInnerClass {
+public class TestInnerClass  {
 	private  class Constents {
 		private int i =11;
 		public int value() {
