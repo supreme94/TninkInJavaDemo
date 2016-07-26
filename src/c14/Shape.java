@@ -1,6 +1,6 @@
 package c14;
 
-public  class Shape  implements Action{
+public  abstract class Shape  implements Action{
 	public static int i = 1;
 	
 	public void draw() {
@@ -9,7 +9,7 @@ public  class Shape  implements Action{
 	
 	
 	public static void main(String[] args) {
-		System.out.println(Shape.i);
+		System.out.println();
 	}
 //	@Override
 //    public String toString();
