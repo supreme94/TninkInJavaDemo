@@ -27,5 +27,8 @@
 5. 静态嵌套类 ：OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 6. 内部类： OuterClass.InnerClass innerObject = new OuterObject().new InnerClass();
 
+##第十一章
+1. Collection接口都实现了Iterable接口，因此可以使用foreach循环，而不是直接实现Iterator接口，因为里面的方法依赖当前位置。如果这些集合直接实现Iterator，则必须包括当前迭代位置的指针。当集合在方法间进行传递的时候，由于当前位置不可知，所以next()之后的值，也不可知。而当实现Iterable则不然，每次调用都返回一个从头开始的迭代器，各个迭代器之间互不影响。
+
 ##第十四章
 1. 使用.class来创建class对象的引用时，不会自动初始化该Class对象。初始化被延迟到了对静态访问（构造器隐式地是静态的）或者非常熟静态域进行首次引用时才执行。
